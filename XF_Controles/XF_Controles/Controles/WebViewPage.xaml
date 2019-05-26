@@ -4,9 +4,26 @@
              x:Class="XF_Controles.Controles.WebViewPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="WebView - apresenta conteúdo HTML." />
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="site" Placeholder="Digite a url" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Ir" Clicked="GoSite"/>
+                <Button Text="Voltar" Clicked="GoVoltar"/>
+                <Button Text="Avançar" Clicked="GoProximo"/>
+            </StackLayout>
+            <!-- HTML, CSS, JS-->
+            <WebView
+                x:Name="Navegador"
+                Source="http://www.google.com"
+                Navigating="ActionCarregando"
+                Navigated="ActionCarregado"
+                
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+                >
+                
+            </WebView>
+            <Label x:Name="lbStatus"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

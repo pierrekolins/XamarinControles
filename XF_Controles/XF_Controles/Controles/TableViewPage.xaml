@@ -4,9 +4,25 @@
              x:Class="XF_Controles.Controles.TableViewPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="TableView - contém linhas de elementos Cell." />
+            <TableView Intent="Settings">
+                <TableRoot>
+                    <TableSection Title="Backup">
+                        <SwitchCell Text="Imagens" On="False"/>
+                        <SwitchCell Text="Email" On="True"/>
+                        <SwitchCell Text="Chat" On="False"/>
+                        <ViewCell>
+                            <StackLayout Padding="15" Orientation="Horizontal">
+                                <Label Text="Frequência"/>
+                                <Slider HorizontalOptions="FillAndExpand" Minimum="0" Maximum="7" Value="3"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+                    <TableSection Title="Segurança">
+                        <SwitchCell Text="Criptografia" On="True"/>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -16,5 +16,36 @@ namespace XF_Controles.Controles
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void GoSite(object sender, EventArgs args)
+        {
+            Navegador.Source = site.Text;
+        }
+
+        private void GoVoltar(object sender, EventArgs args)
+        {
+            if (Navegador.CanGoBack)
+            {
+                Navegador.GoBack();
+            }
+        }
+
+        private void GoProximo(object sender, EventArgs args)
+        {
+            if (Navegador.CanGoForward)
+            {
+                Navegador.GoForward();
+            }
+        }
+
+        private void ActionCarregando(object sender, EventArgs args)
+        {
+            lbStatus.Text = "Carregando...";
+        }
+
+        private void ActionCarregado(object sender, EventArgs args)
+        {
+            lbStatus.Text = "Concluído";
+        }
+    }
 }
