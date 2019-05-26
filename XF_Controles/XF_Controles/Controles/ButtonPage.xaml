@@ -4,9 +4,17 @@
              x:Class="XF_Controles.Controles.ButtonPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Margin="15" Text="Button - responde ao toque ou clique e realiza uma tarefa"/>
+            <Button Text="Botão 01" 
+                    TextColor="White"
+                    FontSize="Large"
+                    BorderRadius="10"
+                    BorderColor="Blue"
+                    BorderWidth="5"
+                    
+                    BackgroundColor="Black"/>
+            <Button Text="Teste"/>
+            <Button BackgroundColor="Transparent" Image="buttonpush.jpg" HorizontalOptions="Start"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

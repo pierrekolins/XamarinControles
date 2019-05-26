@@ -3,10 +3,25 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XF_Controles.Controles.EntryEditorPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Padding="10">
+            <Label Margin="15"  Text="O Entry é usado para entrada de texto de linha única"/>
+
+            <Entry 
+                x:Name="txtIdade"
+                TextColor="Blue"
+                Placeholder="Digite sua idade"
+                PlaceholderColor="Green"
+                
+                Keyboard="Numeric"
+                
+                BackgroundColor="#CCCCCC"/>
+            <Label x:Name="lbIdade"/>
+
+            <Label Margin="15" Text="O controle Editor é usado para aceitar a entrada de várias linha"/>
+            <Editor 
+                x:Name="txtComentario"
+                HeightRequest="200"/>
+            <Label x:Name="lbComentario"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

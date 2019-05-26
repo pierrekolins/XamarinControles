@@ -4,9 +4,18 @@
              x:Class="XF_Controles.Controles.SearchBarPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Margin="15" Text="SearchBar - Fornece uma caixa de pesquisa"/>
+            <!-- TextChanged="Pesquisar" -->
+            <SearchBar 
+                
+                CancelButtonColor="Red"
+                Placeholder="Faça a pesquisa"
+                PlaceholderColor="Azure"
+                SearchButtonPressed="PesquisarButton"
+                />
+            <StackLayout
+                x:Name="listResult">                
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

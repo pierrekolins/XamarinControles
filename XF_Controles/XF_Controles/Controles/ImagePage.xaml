@@ -3,10 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XF_Controles.Controles.ImagePage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout x:Name="Container">
+            <Label Margin="15" Text="Image - contém uma imagem." />
+            <!-- source= Resource, Local, Internet -->
+            <Label Text="Imagem carregada diretamente da internet" />
+            <Image
+                Source="https://pixel.nymag.com/imgs/daily/vulture/2016/12/18/18-Star-Wars-Logo.w330.h330.jpg"
+                Aspect="AspectFit"
+                IsOpaque="True"
+                />
+            <Label Text="Imagem resource" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

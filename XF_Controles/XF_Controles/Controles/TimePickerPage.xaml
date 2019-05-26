@@ -4,9 +4,13 @@
              x:Class="XF_Controles.Controles.TimePickerPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Margin="15" Text="TimePicker - Manipulação de tempo"/>
+            <!-- Format U - Padrão Universal-->
+            <TimePicker
+                TextColor="Red"                 
+                Format="U" 
+                Time="12:30"
+                />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

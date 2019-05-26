@@ -3,10 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XF_Controles.Controles.SwitchPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Padding="15">
+            <Label Text="Switch - fornece um valor alternado." />
+            <Switch 
+                IsToggled="True"
+                
+                Toggled="ActionToggledSwitch"
+                />
+            <Label x:Name="lbSwitch"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

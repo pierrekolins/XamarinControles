@@ -15,6 +15,19 @@ namespace XF_Controles.Controles
 		public ImagePage ()
 		{
 			InitializeComponent ();
-		}
+
+            Image imgSW = new Image();        
+
+            // Mudança da pasta padrão do projeto Windows
+            if(Device.RuntimePlatform == Device.UWP)
+            {
+                imgSW.Source = ImageSource.FromFile("Imagem/sw.jpg");
+            }
+            else
+            {
+                imgSW.Source = ImageSource.FromFile("sw.jpg");
+            }
+            Container.Children.Add(imgSW);
+        }
 	}
 }

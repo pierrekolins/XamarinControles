@@ -4,7 +4,14 @@
              x:Class="XF_Controles.Controles.LabelPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Label Text="Label - Rótulo - Textos"/>
+            <Label Text="Welcome to Xamarin.Forms! Welcome to Xamarin.Forms! Welcome to Xamarin.Forms!"
+                   FontSize="24"
+                   TextColor="White"
+                   FontAttributes="Italic"
+                   LineBreakMode="WordWrap"
+                   
+                BackgroundColor="Black"   
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>

@@ -3,10 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XF_Controles.Controles.ProgressBarPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Padding="15">
+            <Label Text="ProgressBar - Barra de progresso"/>
+            <ProgressBar x:Name="bar1" Progress="0.2"/>
+            <ProgressBar x:Name="bar2" Progress="0.5"/>
+            <ProgressBar x:Name="bar3" Progress="0.7"/>
+            <Button Text="Modificar Barras" Clicked="Modificar"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

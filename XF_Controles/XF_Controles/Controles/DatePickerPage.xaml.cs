@@ -16,5 +16,11 @@ namespace XF_Controles.Controles
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void ActionDateSelected(object sender, DateChangedEventArgs args)
+        {
+            lbResultado.Text = args.OldDate.ToString("dd/MM/yyyy") + " -> " + args.NewDate.ToString("dd/MM/yyyy");
+        }
+
+    }
 }

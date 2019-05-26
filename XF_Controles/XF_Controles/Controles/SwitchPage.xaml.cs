@@ -16,5 +16,11 @@ namespace XF_Controles.Controles
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void ActionToggledSwitch(object sender, ToggledEventArgs args)
+        {
+            lbSwitch.Text = args.Value.ToString(); 
+        }
+
+    }
 }

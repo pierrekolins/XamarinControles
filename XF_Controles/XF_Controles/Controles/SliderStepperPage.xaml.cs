@@ -16,5 +16,15 @@ namespace XF_Controles.Controles
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void ActionMudouSlider(object sender, ValueChangedEventArgs args)
+        {
+            lbSlider.Text = args.NewValue.ToString();
+        }
+
+        private void ActionMudouStepper(object sender, ValueChangedEventArgs args)
+        {
+            lbStepper.Text = args.NewValue.ToString();
+        }        
+    }
 }

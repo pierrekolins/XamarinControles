@@ -16,5 +16,12 @@ namespace XF_Controles.Controles
 		{
 			InitializeComponent ();
 		}
+
+        private void Modificar(object sender, EventArgs args)
+        {
+            bar1.Progress = 1;
+            bar2.ProgressTo(1, 5000, Easing.Linear);
+            bar3.ProgressTo(1, 5000, Easing.CubicOut);
+        }
 	}
 }

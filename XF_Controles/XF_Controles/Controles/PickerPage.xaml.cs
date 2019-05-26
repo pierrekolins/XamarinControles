@@ -16,5 +16,12 @@ namespace XF_Controles.Controles
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void MudarEmpresa(object sender, SelectedItemChangedEventArgs args)
+        {
+            Picker picker = (Picker)sender;
+            lbSelecao.Text = "Index: "+picker.SelectedIndex.ToString() +" - Empresa: "+  picker.SelectedItem.ToString();
+        }
+
+    }
 }

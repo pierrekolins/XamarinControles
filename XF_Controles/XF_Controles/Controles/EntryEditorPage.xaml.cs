@@ -15,6 +15,16 @@ namespace XF_Controles.Controles
 		public EntryEditorPage ()
 		{
 			InitializeComponent ();
+
+            txtIdade.TextChanged  += delegate (object sender, TextChangedEventArgs args)
+            {
+                lbIdade.Text = args.NewTextValue;
+            };
+
+            txtComentario.Completed += delegate (object sender, EventArgs args) 
+            {
+                lbComentario.Text = txtComentario.Text.Length.ToString();
+            };
 		}
 	}
 }

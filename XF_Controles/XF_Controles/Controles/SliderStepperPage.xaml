@@ -4,9 +4,26 @@
              x:Class="XF_Controles.Controles.SliderStepperPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Margin="15" Text="Slider - insere um valor linear."/>
+            <Slider
+                Minimum="0"
+                Maximum="100"
+                Value="20"
+                
+                ValueChanged="ActionMudouSlider"
+                />
+            <Label x:Name="lbSlider"/>
+
+            <Label Margin="15" Text="Stepper - insere um valor separado, restrito a um intervalo."/>
+            <Stepper
+                Maximum="20"
+                Minimum="0"
+                Increment="2"
+                Value="4"
+                
+                ValueChanged="ActionMudouStepper"
+                />
+            <Label x:Name="lbStepper"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

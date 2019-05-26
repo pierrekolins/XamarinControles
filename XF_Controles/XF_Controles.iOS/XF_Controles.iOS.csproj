@@ -157,4 +157,10 @@
       <Name>XF_Controles</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\buttonpush.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\sw.jpg" />
+  </ItemGroup>
 </Project>

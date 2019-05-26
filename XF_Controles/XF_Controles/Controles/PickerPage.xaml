@@ -4,9 +4,22 @@
              x:Class="XF_Controles.Controles.PickerPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Picker - Um controle View para selecionar um elemento em uma lista."/>
+            <Picker
+                Title="Empresas de Tecnologia"
+                TextColor="Blue"
+                SelectedIndex="2"
+                SelectedIndexChanged="MudarEmpresa"
+                >
+                <Picker.Items>
+                    <x:String>Microsoft</x:String>
+                    <x:String>Apple</x:String>
+                    <x:String>IBM</x:String>
+                    <x:String>Google</x:String>
+                    <x:String>Oracle</x:String>
+                </Picker.Items>
+            </Picker>
+            <Label x:Name="lbSelecao"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
